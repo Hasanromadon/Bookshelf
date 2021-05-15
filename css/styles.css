@@ -1,0 +1,395 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('/assets/bg-blue.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after,
+::before {
+  box-sizing: border-box;
+}
+.h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+.container {
+  max-width: 946px;
+  margin: 0 auto;
+}
+nav {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dashboard {
+  margin-top: 20px;
+}
+
+.summary {
+  display: flex;
+}
+
+.categories {
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  width: 601px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.categories-item {
+  display: flex;
+}
+
+.item {
+  border: 1px solid #e5e5e5;
+  width: 174px;
+  height: 131px;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.total-by-category {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.total-by-category img {
+  margin-right: 10px;
+}
+.total-by-category p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.total-percent {
+  text-align: right;
+}
+.total-percent span {
+  font-size: 14px;
+  color: #d61818;
+}
+
+.total-book {
+  flex: 1;
+  border: 1px solid #e5e5e5;
+  margin-left: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+}
+.total-book-title {
+  display: flex;
+  align-items: center;
+}
+.total-book-title img {
+  margin-right: 10px;
+}
+.total-book-text {
+  display: flex;
+  flex-direction: column;
+}
+.total-book-text .title {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.efective-total-book {
+  font-size: 12px;
+  color: #666666;
+}
+
+.active-total-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(
+    172.68deg,
+    #4aaa67 5.69%,
+    rgba(87, 196, 120, 0.9) 94.51%
+  );
+  border-radius: 6px;
+}
+.total-all-book {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.amount-text {
+  font-size: 12px;
+  color: white;
+  margin-top: 10px;
+}
+.completeRead,
+.notCompleteRead {
+  cursor: pointer;
+}
+
+.second-board {
+  margin-top: 20px;
+  display: flex;
+}
+
+.history-books {
+  border: 1px solid #e5e5e5;
+  width: 601px;
+  border-radius: 6px;
+  background-color: white;
+  padding: 20px;
+}
+
+.books-list-container {
+  margin-top: 10px;
+  overflow-y: scroll;
+  padding-right: 10px;
+  height: 350px;
+}
+
+.books-list-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.books-list-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgb(198, 240, 255);
+  border-radius: 3px;
+}
+
+.books-list-container::-webkit-scrollbar-thumb {
+  background-color: #e8f4f4;
+  border-radius: 3px;
+  width: 5px;
+}
+
+.item p:hover {
+  color: #5c5e5c;
+}
+
+.item-books {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.status-book {
+  font-weight: 400;
+  color: #4aaa67;
+  font-size: 14px;
+}
+.item-header {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+.item-header img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+.title-book {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.title-book span {
+  font-weight: 400;
+}
+
+.date-books {
+  font-size: 11px;
+  color: #666666;
+  margin-top: 5px;
+}
+
+.action-books img {
+  cursor: pointer;
+}
+
+.action-books img:first-child {
+  margin-right: 10px;
+}
+
+.input-transaction {
+  margin-left: 20px;
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+.input-transaction p {
+  margin-bottom: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  color: #333;
+  outline: none;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2e8247;
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  outline: none;
+  color: #333;
+}
+.form-group input:focus {
+  background-color: #ccedd6;
+  border: 1px solid #ccedd6;
+}
+button {
+  background-color: #4aaa67;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+button:hover {
+  background-color: #2e8247;
+}
+
+.cancel-button {
+  display: none;
+  background-color: #b7b7b7;
+  margin-top: 10px;
+}
+.cancel-button:hover {
+  background-color: #ababab;
+}
+.update-button {
+  display: none;
+}
+.filterBar {
+  flex-direction: row;
+  margin: 20px 0;
+}
+.filterBar input {
+  width: 80%;
+  margin-right: 10px;
+}
+.filterBar button {
+  width: 20%;
+}
+
+.undone {
+  color: #e3c400;
+}
+
+@media only screen and (max-width: 948px) {
+  .container {
+    padding: 0 5%;
+  }
+
+  .categories {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .summary {
+    flex-direction: column-reverse;
+  }
+  .categories {
+    margin: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .total-book {
+    margin: 0;
+    width: 100%;
+    flex: 1;
+  }
+  .second-board {
+    flex-direction: column-reverse;
+  }
+  .history-books {
+    margin: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .input-transaction {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .h1 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .h2 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+  }
+  .search-input {
+    width: 40%;
+  }
+  .search-btn {
+    font-size: 13px;
+    padding: 0.5px 1px;
+  }
+
+  .add-button {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+  }
+}

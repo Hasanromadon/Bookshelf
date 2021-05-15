@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="16x16"
+      href="/assets/favicon.jpg"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Bookshelf</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./assets/logo.svg" alt="logo finotes" />
+      </nav>
+      <div class="dashboard">
+        <div class="summary">
+          <div class="categories">
+            <p class="h2">Status Buku</p>
+            <div class="categories-item">
+              <div class="item">
+                <p>Sudah Baca</p>
+                <div class="total-by-category">
+                  <img src="./assets/icon-done.svg" alt="" />
+                  <p class="completeRead">0 <span>Buku</span></p>
+                </div>
+              </div>
+              <div class="item">
+                <p>Belum Baca</p>
+                <div class="total-by-category">
+                  <img src="./assets/icon-undone.svg" alt="" />
+                  <p class="notCompleteRead">0 Buku</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="total-book">
+            <div class="total-book-title">
+              <img src="./assets/icon-book.svg" alt="" />
+              <div class="total-book-text">
+                <p class="title">Total Buku</p>
+                <p class="efective-total-book">May 21, 2020</p>
+              </div>
+            </div>
+            <div class="active-total-book">
+              <p class="total-all-book">0 Buku</p>
+              <p class="amount-text">Jumlah keseluruhan</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of summary -->
+        <div class="second-board">
+          <div class="history-books">
+            <p class="h2">List Buku</p>
+            <div class="filterBar form-group">
+              <input class="search-input" type="text" placeholder="Cari Buku" />
+              <button class="search-btn" for="">Search</button>
+            </div>
+            <div class="books-list-container">
+              <!-- this is container for add list book-->
+            </div>
+          </div>
+
+          <div class="input-transaction">
+            <p class="h2">Input Buku</p>
+            <div class="input-form">
+              <input class="inputID" type="hidden" />
+              <div class="form-group">
+                <label for="">Kategori</label>
+                <select name="isComplete" id="isComplete">
+                  <option value="false">Belum Baca</option>
+                  <option value="true">Sudah Baca</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Nama Buku</label>
+                <input id="title" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="">Tahun</label>
+                <input id="year" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="">Author</label>
+                <input id="author" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="">Image URL</label>
+                <input class="imgUrl" type="text" />
+              </div>
+              <div class="form-group">
+                <button class="add-button">Tambahkan</button>
+                <button class="update-button">Update Button</button>
+                <button class="cancel-button">Batal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
