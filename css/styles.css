@@ -366,30 +366,62 @@ button:hover {
   }
 }
 @media only screen and (max-width: 414px) {
+  .container {
+    padding: 0 2%;
+  }
+
+  .total-book,
+  .categories,
+  .input-transaction,
+  .history-books {
+    padding: 5px;
+  }
+
   .h1 {
     font-size: 16px;
     font-weight: bold;
   }
   .h2 {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     color: #333;
   }
+
+  .item {
+    width: 100%;
+  }
+  .item:not(:last-child) {
+    margin-right: 5px;
+  }
+  .categories-item {
+    margin: 0;
+  }
+
   .search-input {
     width: 40%;
   }
   .search-btn {
-    font-size: 13px;
+    font-size: 14px;
     padding: 0.5px 1px;
   }
 
   .add-button {
-    font-size: 13px;
+    font-size: 14px;
+  }
+
+  .action-books {
+    display: flex;
+    margin-left: 5px;
   }
 
   p {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     color: #333;
+  }
+
+  .books-list-container::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
   }
 }
